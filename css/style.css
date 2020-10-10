@@ -1,0 +1,91 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-family);
+
+  color: var(--color-font);
+  background: var(--color-bg);
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+#wrapper {
+  padding: 1rem;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  background: #00F;
+  display: flex;
+}
+#logo {
+  background: #0F0;
+  flex: 1;
+}
+#title {
+  background: #0FF;
+  flex: 1;
+  text-align: center;
+}
+#description {
+  background: #F00;
+  flex: 1;
+  text-align: right;
+}
+
+
+#main {
+  width: 100%;
+  color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vase {
+  background: #DDD;
+  width: 33.33%;
+  padding: 1rem;
+}
+
+.vase img {
+  width: 100%;
+}
+.vase.roundedTop img {
+  border-radius: 1000px 1000px 0px 0px;
+}
+
+#footer {
+  background: aqua;
+  display: flex;
+  border-top:solid 1px #000;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+#artistInfo {
+  background: aqua;
+  flex: 1;
+}
+
+#Contact {
+  background: #F00;
+  flex: 1;
+  text-align: right;
+}
+
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+  } 
+  .vase {
+    width: 50%;
+  }
+}
