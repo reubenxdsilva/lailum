@@ -80,6 +80,11 @@ html, body {
 .vase img {
   width: 100%;
 }
+
+.vase img:hover {
+  border: solid 3px #AD2A0C;
+}
+
 .vase.roundedTop img {
   border-radius: 1000px 1000px 0px 0px;
 }
