@@ -1,8 +1,8 @@
 :root {
 
   /* fonts */
-  --font-family:  'IBM Plex Sans', sans-serif;
-  --font-family-mono:  'IBM Plex Mono', monospace;
+  --font-family:  'Libre Baskerville', serif;;
+  --font-family-mono:  'Roboto Mono', monospace;;
 
   --color-white: #FFF;
   --color-black: #131313;

@@ -5,12 +5,13 @@
 
 html, body {
   font-family: var(--font-family);
-
   color: var(--color-font);
   background: var(--color-bg);
 
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 17px;
+  line-height: 1.6;
+  background-color: #F2F4F3;
+  border: solid 8px #213127;
 }
 
 
@@ -18,40 +19,60 @@ html, body {
   padding: 1rem;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 #header {
-  background: #00F;
+  /*background: #00F;*/
   display: flex;
+  margin-bottom: 30px;
 }
 #logo {
-  background: #0F0;
+  /*background: #0F0;*/
   flex: 1;
+  padding-left: 1rem;
 }
 #title {
-  background: #0FF;
+  /*background: #0FF;*/
   flex: 1;
+  padding-top: 70px;
   text-align: center;
+  font-size: 2.8rem;
+  font-style: italic;
+  color: #213127;
 }
 #description {
-  background: #F00;
+  /*background: #F00;*/
   flex: 1;
+  text-align: left;
+  font-style: italic;
+  color: #213127;
+  padding-right: 1rem;
+}
+
+#description-note {
   text-align: right;
+  color: #AD2A0C;
+  font-family: var(--font-family-mono);
+  font-style: normal;
 }
 
 
 #main {
   width: 100%;
-  color: #ccc;
+  /*color: #ccc;*/
   display: flex;
   flex-wrap: wrap;
 }
 
 .vase {
-  background: #DDD;
-  width: 33.33%;
+  /*background: #DDD;*/
+  width: 33.333%;
   padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-family-mono) ;
+  font-size: .8rem;
+  color: #7B7F80;
 }
 
 .vase img {
@@ -60,24 +81,37 @@ html, body {
 .vase.roundedTop img {
   border-radius: 1000px 1000px 0px 0px;
 }
+.vase.roundedLeft img {
+  border-radius: 100px 0 0px 0px;
+}
 
 #footer {
-  background: aqua;
+  /*background: aqua;*/
   display: flex;
-  border-top:solid 1px #000;
-  padding-top: 100px;
+  border-top:solid 1px #213127;
+  padding-top: 50px;
   margin-top: 100px;
 }
 
 #artistInfo {
-  background: aqua;
+  /*background: aqua;*/
   flex: 1;
+  color: #AD2A0C;
+  font-style: ;
+}
+
+#note {
+  font-family: var(--font-family-mono) ;
+  color: #7B7F80;
+  font-size: .8rem;
+  padding-top: 20px;
 }
 
 #Contact {
-  background: #F00;
+  /*background: #F00;*/
   flex: 1;
   text-align: right;
+  width: 50%;
 }
 
 
