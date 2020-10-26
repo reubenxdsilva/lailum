@@ -100,7 +100,7 @@ html, body {
 }
 
 .vase.title {
-  flex: 1;
+  flex: 2;
   /*background: #F00;*/
   color: #7B7F80;
   text-align: left;
@@ -112,6 +112,7 @@ html, body {
   flex: 1;
   /*background: #0F0;*/
   color: #AD2A0C;
+  font-weight: bold;
   text-align: right;
   padding: 0rem;
   margin-bottom: 0rem;
@@ -161,7 +162,7 @@ html, body {
   background: #213127;
   display: flex;
   color: #F2F4F3;
-  padding: 4rem 10%;
+  padding: 4rem 0rem;
   margin: 0px auto;
   line-height: 1.5rem;
 }
@@ -169,15 +170,16 @@ html, body {
 #base-logo {
   /*background:#0F0;*/
   flex: 1;
-  padding-left: 10%;
+  padding-left: 7%;
   font-size: 1.4rem;
 }
 
 #base-note {
   /*background:#F00;*/
-  flex: 1;
+  flex: 1.5;
   font-family: var(--font-family-mono);
   font-size: 0.8rem;
+  max-width: 500px;
 }
 
 #base-social {
@@ -191,8 +193,48 @@ html, body {
 a {
   letter-spacing: .1rem;
   color: #F2F4F3;
+  text-decoration: none;
 }
 
+
+@media (max-width: 1080px) {
+  .vase {
+    width: 33.333%;
+  }
+
+  #artistImage {
+    padding-right: 0rem;
+  }
+  
+  #artistInfo {
+    padding-right: 2rem;
+  }
+  
+  #Contact {
+    font-size: 1.2rem;
+  }
+
+  #base {
+    width: 100%;
+    padding: 4rem 2%;
+  }
+
+  #base-logo {
+    /*background:#0F0;*/
+    padding-left: 0rem;
+    font-size: 1.2rem;
+  }
+
+  #base-note {
+    /*background:#F00;*/
+    padding-top: 0px;
+  }
+
+  #base-social {
+    padding-top: 0px;
+    padding-left: 4rem;
+  }
+}
 
 @media (max-width: 768px) {
   #header {
@@ -210,11 +252,12 @@ a {
   }
   #footer {
     flex-direction: column;
-    padding: 2rem 2%;
+    padding: 4rem 2%;
   } 
   #Contact {
     text-align: left;
     padding-top: 20px;
+    font-size: 1.4rem;
   }
 
   #artistImage {
@@ -226,7 +269,7 @@ a {
   #artistInfo {
     /*background: aqua;*/
     padding-right: 0rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   #base {
