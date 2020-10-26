@@ -18,7 +18,7 @@ html, body {
 #wrapper {
   padding: 1rem;
   width: 100%;
-  max-width: 960px;
+  max-width: 1280px;
   margin: 50px auto;
 }
 
@@ -46,16 +46,15 @@ html, body {
   /*background: #F00;*/
   flex: 1;
   text-align: left;
-  font-style: italic;
-  color: #213127;
+  font-family: var(--font-family-mono);
+  color: #AD2A0C;
   padding-right: 1rem;
 }
 
 #description-note {
   padding-top: 20px;
   text-align: right;
-  color: #AD2A0C;
-  font-family: var(--font-family-mono);
+  color: #213127;
   font-style: normal;
 }
 
@@ -68,10 +67,10 @@ html, body {
 }
 
 .vase {
-  /*background: #DDD;*/
-  width: 33.333%;
+  /*background: #0FF;*/
+  width: 25%;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-family: var(--font-family-mono) ;
   font-size: .8rem;
   color: #7B7F80;
@@ -92,32 +91,106 @@ html, body {
   border-radius: 100px 0 0px 0px;
 }
 
+.vase.description {
+  display: flex;
+  width: 100%;
+  padding: 0rem;
+  margin-bottom: 0rem;
+  /*background: #00F;*/
+}
+
+.vase.title {
+  flex: 1;
+  /*background: #F00;*/
+  color: #7B7F80;
+  text-align: left;
+  padding: 0rem;
+  margin-bottom: 0rem;
+}
+
+.vase.price {
+  flex: 1;
+  /*background: #0F0;*/
+  color: #AD2A0C;
+  text-align: right;
+  padding: 0rem;
+  margin-bottom: 0rem;
+}
+
 #footer {
   /*background: aqua;*/
   display: flex;
   border-top:solid 1px #213127;
-  padding-top: 50px;
-  margin-top: 70px;
+  padding-top: 80px;
+  margin-top: 45px;
+  line-height: 1.8;
+}
+
+#artistImage {
+  /*background: #0F0;*/
+  flex: 1;
+  stroke: #AD2A0C;
+  stroke-width: 1px;
+  padding-right: 2rem;
 }
 
 #artistInfo {
   /*background: aqua;*/
-  flex: 1;
+  flex: 2;
   color: #AD2A0C;
-}
-
-#note {
-  font-family: var(--font-family-mono) ;
-  color: #7B7F80;
-  font-size: .8rem;
-  padding-top: 20px;
+  padding-left: 0rem;
+  padding-right: 4rem;
 }
 
 #Contact {
   /*background: #F00;*/
+  flex: .8;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #213127;
+}
+
+#email {
+  font-size: 1rem;
+  padding-top: 2rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#base {
+  background: #213127;
+  display: flex;
+  color: #F2F4F3;
+  padding: 4rem 10%;
+  margin: 0px auto;
+  line-height: 1.5rem;
+}
+
+#base-logo {
+  /*background:#0F0;*/
   flex: 1;
-  text-align: right;
-  width: 50%;
+  padding-left: 10%;
+  font-size: 1.4rem;
+}
+
+#base-note {
+  /*background:#F00;*/
+  flex: 1;
+  font-family: var(--font-family-mono);
+  font-size: 0.8rem;
+}
+
+#base-social {
+  /*background:#00F;*/
+  flex: 1;
+  font-size: 1rem;
+  padding-left: 10%;
+  line-height: 2;
+}
+
+a {
+  letter-spacing: .1rem;
+  color: #F2F4F3;
 }
 
 
@@ -137,10 +210,44 @@ html, body {
   }
   #footer {
     flex-direction: column;
+    padding: 2rem 2%;
   } 
   #Contact {
     text-align: left;
     padding-top: 20px;
+  }
+
+  #artistImage {
+    margin-bottom: 40px;
+    max-width: 500px;
+    align-content: center;
+  }
+
+  #artistInfo {
+    /*background: aqua;*/
+    padding-right: 0rem;
+    font-size: 1.2rem;
+  }
+
+  #base {
+    flex-direction: column;
+    padding: 5rem 5%;
+  }
+
+  #base-logo {
+    /*background:#0F0;*/
+    padding-left: 0rem;
+    font-size: 1.2rem;
+  }
+
+  #base-note {
+    /*background:#F00;*/
+    padding-top: 30px;
+  }
+
+  #base-social {
+    padding-top: 30px;
+    padding-left: 0rem;
   }
 }
 
@@ -151,5 +258,35 @@ html, body {
   .vase {
     width: 50%;
     padding: 0.5rem;
+  }
+  #artistImage {
+    margin-bottom: 40px;
+    max-width: 250px;
+    align-content: center;
+  }
+
+  #artistInfo {
+    /*background: aqua;*/
+    padding-right: 0rem;
+  }
+
+  #base {
+    padding: 4rem 5%;
+  }
+
+  #base-logo {
+    /*background:#0F0;*/
+    padding-left: 0rem;
+    font-size: 1.2rem;
+  }
+
+  #base-note {
+    /*background:#F00;*/
+    padding-top: 30px;
+  }
+
+  #base-social {
+    padding-top: 30px;
+    padding-left: 0rem;
   }
 }
