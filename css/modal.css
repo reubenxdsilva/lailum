@@ -55,7 +55,7 @@ body {
   margin: auto;
   padding: 0 0 0 0;
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   font-family: var(--font-family-mono);
   color: #7B7F80;
 }
@@ -112,7 +112,7 @@ img.hover-shadow {
   z-index: 2;
   top: 0;
   right: 30px;
-  font-size: 72px;
+  font-size: 60px;
   font-weight: normal;
 }
 
