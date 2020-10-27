@@ -10,8 +10,9 @@ html, body {
 
   font-size: 17px;
   line-height: 1.6;
-  background-color: #F2F4F3;
+  background-color: F2F4F3#;
   border: solid 8px #213127;
+  box-sizing: border-box;
 }
 
 
@@ -170,7 +171,7 @@ html, body {
 #base-logo {
   /*background:#0F0;*/
   flex: 1;
-  padding-left: 7%;
+  padding-left: 15%;
   font-size: 1.4rem;
 }
 
@@ -186,7 +187,7 @@ html, body {
   /*background:#00F;*/
   flex: 1;
   font-size: 1rem;
-  padding-left: 10%;
+  padding-left: 8%;
   line-height: 2;
 }
 
