@@ -39,8 +39,15 @@
 
   <div id="main">
 
-    <div class="vase">
-      <img src='img/vase-001.jpg' onclick="openLightbox('Lightbox1');toSlide(1)" alt="vase-001"/>
+    <div class="vase" onclick="openLightbox('Lightbox1');toSlide(1)" alt="vase-001">
+      <svg width='244px' height = '287px' viewBox= "0 0 244px 342px">
+        <defs>
+          <mask id = "wave">
+            <image width='244px' height = '342px' xlink:href="img/curve-box.png"/>
+          </mask> 
+        </defs>
+        <image mask="url(#wave)" width='244px' height = '287px' xlink:href="img/vase-001.jpg"/>
+      </svg>
       <div class="vase description">
         <div class="vase title">vase no.2108</div>
         <div class="vase price"></div>
@@ -56,7 +63,7 @@
     </div>
 
     <div class="vase" alt="vase-003">
-      <img src='img/vase-003.jpg' />
+      <img src='img/vase-002.jpg' alt="vase-003"/>
       <div class="vase description">
         <div class="vase title">Another greek vase</div>
         <div class="vase price">€385</div>
