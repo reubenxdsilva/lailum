@@ -5,32 +5,6 @@
 body {
   margin: ;
 }
-
-/* You define the style of our previews here, you are using flex to display the images 
-   "responsively". */
-
-.preview {
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.row > .col {
-  padding: 0 8px;
-}
-
-.col {
-  float: left;
-  width: 25%;
-}
-
-/* Now you want to define what the lightbox will look like. Note that you have the display
-   as none. You don't want it to show until the user clicks on one of the previews. 
-   You will change this display property with JavaScript below. */
    
 .modal {
   display: none;
@@ -38,7 +12,6 @@ body {
   z-index: 1;
   align-content: center;
   padding: 2%;
-  /*padding: 60px 60px 60px 60px;*/
   left: 0;
   top: 0;
   width: 100%;
@@ -60,9 +33,6 @@ body {
   color: #7B7F80;
 }
 
-/* Same with your slides, you set the display to none, because you want to choose which 
-   one is shown at a time. */
-
 .slide {
   display: none;
 }
@@ -76,35 +46,10 @@ body {
   width: 100%;
 }
 
-.dots {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  /*justify-content: space-between;*/
-}
-
 /* You want the previews a little transparent to show that they are "inactive". 
    You then add an .active or :hover class to animate the selections for your user when
    they interact with your controls and clickable content.
  */
-
-img.preview, img.modal-preview {
-  opacity: 0.6;
-}
-
-img.active,
-.preview:hover,
-.modal-preview:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} 
 
 .close {
   color:#213127;
@@ -118,7 +63,7 @@ img.hover-shadow {
 
 .close:hover,
 .close:focus {
-  color: #1c2c22;
+  color: #213127b2;
   text-decoration: none;
   cursor: pointer;
 }
@@ -134,7 +79,7 @@ img.hover-shadow {
   color: #213127;
   font-weight: normal;
   font-size: 36px;
-  transition: .2s ease;
+  /*transition: .5s ease;*/
   /*border-radius: 0 3px 3px 0;*/
   user-select: none;
   -webkit-user-select: none;
@@ -148,5 +93,4 @@ img.hover-shadow {
 .previous:hover,
 .next:hover {
     color: #3d5a48;
-  /*background-color: rgba(0, 0, 0, 0.8);*/
 }

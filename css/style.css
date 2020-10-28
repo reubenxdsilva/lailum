@@ -244,9 +244,14 @@ a {
     display: none;
   }
   #description {
-    padding-left: 1rem;
+    padding-left: 3rem;
     padding-top: 1rem;
   }
+
+  #description-note {
+    padding-top: 0px;
+  }
+
   .vase {
     width: 50%;
   }

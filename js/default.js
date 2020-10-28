@@ -1,5 +1,3 @@
-
-
 let windowTop = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
