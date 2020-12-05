@@ -101,7 +101,7 @@ html, body {
 .vase.title {
   flex: 2;
   /*background: #F00;*/
-  color: #7B7F80;
+  color: #940303;
   text-align: left;
   padding: 0rem;
   margin-bottom: 0rem;
@@ -110,8 +110,8 @@ html, body {
 .vase.price {
   flex: 1;
   /*background: #0F0;*/
-  color: #AD2A0C;
-  font-weight: bold;
+  color: #979797;
+
   text-align: right;
   padding: 0rem;
   margin-bottom: 0rem;
@@ -121,15 +121,15 @@ html, body {
   /*background: aqua;*/
   display: flex;
   border-top:solid 1px #213127;
-  padding-top: 80px;
-  margin-top: 45px;
+  padding-top: 130px;
+  margin-top: 75px;
   line-height: 1.8;
   max-width: 1366px;
 }
 
 #artistImage {
   /*background: #0F0;*/
-  flex: 1;
+  flex: 1.2;
   stroke: #AD2A0C;
   stroke-width: 1px;
   padding-right: 2rem;
@@ -146,14 +146,14 @@ html, body {
 #Contact {
   /*background: #F00;*/
   flex: .8;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: #213127;
 }
 
 #email {
   font-size: 1rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
   font-style: normal;
   font-weight: bold;
 }
@@ -162,7 +162,7 @@ html, body {
   background: #213127;
   display: flex;
   color: #F2F4F3;
-  padding: 4rem 0rem;
+  padding: 5rem 0rem;
   margin: 0px auto;
   line-height: 1.5rem;
 }
@@ -170,7 +170,7 @@ html, body {
 #base-logo {
   /*background:#0F0;*/
   flex: 1;
-  padding-left: 15%;
+  padding-left: 16%;
   font-size: 1.4rem;
 }
 
