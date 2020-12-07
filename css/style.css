@@ -22,14 +22,6 @@ html, body {
   margin: 40px auto;
 }
 
-#cover {
-  padding: 2rem;
-  width: 100%;
-  max-width: 960px;
-  margin: 40px auto;
-  border: solid 8px #AD2A0C;
-}
-
 #header {
   /*background: #00F;*/
   display: flex;
@@ -89,7 +81,9 @@ html, body {
 }
 
 .vase img:hover {
-  border: solid 3px #AD2A0C;
+  /*width: 200%;
+  z-index: 1;*/
+  /*border: solid 3px #AD2A0C;*/
 }
 
 .vase.roundedTop img {
@@ -124,6 +118,30 @@ html, body {
   text-align: right;
   padding: 0rem;
   margin-bottom: 0rem;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(242,244,243,0.9);
+}
+.lightbox img {
+  position: absolute;
+  left: 50vh;
+	width: 720px;
+  height: 848px;
+  margin-top: 3rem;
+}
+
+.lightbox:target {
+	outline: none;
+  display: block;
+  border-radius: none;
 }
 
 #footer {
