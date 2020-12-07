@@ -10,7 +10,7 @@ html, body {
 
   font-size: 15px;
   line-height: 1.6;
-  background-color: F2F4F3#;
+  background-color: #F2F4F3;
   border: solid 8px #213127;
   box-sizing: border-box;
 }
@@ -20,6 +20,14 @@ html, body {
   width: 100%;
   max-width: 960px;
   margin: 40px auto;
+}
+
+#cover {
+  padding: 2rem;
+  width: 100%;
+  max-width: 960px;
+  margin: 40px auto;
+  border: solid 8px #AD2A0C;
 }
 
 #header {
@@ -42,6 +50,7 @@ html, body {
   font-style: italic;
   color: #213127;
 }
+
 #description {
   /*background: #F00;*/
   flex: 1;
