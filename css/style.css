@@ -85,7 +85,7 @@ html, body {
 .vase img:hover {
   /*width: 200%;
   z-index: 1;*/
-  /*border: solid 3px #AD2A0C;*/
+  border: solid 2px #AD2A0C;
 }
 
 .vase.roundedTop img {
@@ -133,11 +133,15 @@ html, body {
 	background: rgba(242,244,243,0.9);
 }
 .lightbox img {
-  position: absolute;
+  position: relative;
   left: 50vh;
 	width: 720px;
   height: 848px;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.lightbox img:hover {
+  border: solid 0px #AD2A0C;
 }
 
 .lightbox:target {
@@ -225,10 +229,13 @@ a {
   text-decoration: none;
 }
 
-
 @media (max-width: 1080px) {
   .vase {
     width: 50%;
+  }
+
+  .lightbox img {
+    left: 10vh;
   }
 
   #artistImage {
@@ -284,6 +291,17 @@ a {
   .vase {
     width: 50%;
   }
+
+  .lightbox:target {
+    outline: none;
+    display: block;
+    border-radius: none;
+  }
+
+  .lightbox img {
+    left: 2vh;
+  }
+
   #footer {
     flex-direction: column;
     padding: 4rem 2%;
@@ -347,9 +365,16 @@ a {
     width: 100%;
     padding: 0.5rem;
   }
+
+  .lightbox:target {
+    outline: none;
+    display: none;
+    border-radius: none;
+  }
+
   #artistImage {
     margin-bottom: 40px;
-    max-width: 250px;
+    max-width: 100%;
     align-content: center;
   }
 
