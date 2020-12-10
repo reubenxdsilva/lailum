@@ -67,14 +67,12 @@
   }
 
   #footer {
-    /*background: #F00;*/
-    /*display: flex;*/
-    margin-top: 2rem;
+    /*background: #0F0;*/
+    bottom: 0rem;
   }
 
   #subtitle {
-    /*flex: 5;
-    text-align: left;*/
+    /*flex: 5;*/
     position: absolute;
     bottom: 2rem;
     left: 2rem;
