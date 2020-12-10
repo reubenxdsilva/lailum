@@ -27,11 +27,13 @@ html, body {
   display: flex;
   margin-bottom: 20px;
 }
+
 #logo {
   /*background: #0F0;*/
   flex: 1;
   padding-left: 3rem;
 }
+
 #title {
   /*background: #0FF;*/
   flex: 1;
